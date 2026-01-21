@@ -8,7 +8,7 @@
     content="Inference-Time Scaling for Joint Audio–Video Generation using Adaptive Reward Weighting">
   <meta name="keywords" content="Inference-Time Scaling, Audio-Video Generation, Multimodal generation, Generative AI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Multi-Verifiers Dynamics</title>
+  <title>Qualitative Results</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -47,50 +47,31 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Multi-Verifiers Dynamics</h2>
+          <h2 class="title is-3">Qualitative Results</h2>
           <!-- Text description area -->
           <div class="box" style="margin: 2rem auto; background-color: #f5f5f5; max-width: 800px;">
-            <p class="has-text-centered">"Two colorful birds with vibrant blue, green, and white feathers are perched on a branch, facing each other and interacting. Their tails are long and feature black and white stripes. A lush green forest with blurred foliage serves as the background, and a bird chirping sound can be heard throughout."</p>
+            <p class="has-text-centered">"There's a <span style="color: green;">loud explosion</span> in a snowy landscape, with intense orange flames and smoke billowing out. <span style="color: red;">Debris flies everywhere</span>, and the ground around the explosion site is covered in snow. Following the explosion, there are a series of beeps and a whooshing noise."</p>
           </div>
         </div>
       </div>
 
       <div class="columns is-centered">
         <div class="column">
-          <h3 class="title is-4 has-text-centered">Single Verifier (VR)</h3>
+          <h3 class="title is-4 has-text-centered">Naive Sampling</h3>
           <video id="video1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_0142_single.mp4" type="video/mp4">
+            <source src="./static/videos/sample_0218_naive.mp4" type="video/mp4">
           </video>
         </div>
         <div class="column">
-          <h3 class="title is-4 has-text-centered">Multi Verifiers (VR+JS)</h3>
+          <h3 class="title is-4 has-text-centered">Single-Verifier (VR-TA)</h3>
           <video id="video2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_0142.mp4" type="video/mp4">
+            <source src="./static/videos/sample_0218_single.mp4" type="video/mp4">
           </video>
         </div>
-      </div>
-
-      <!-- Second row of videos -->
-      <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
-        <div class="column is-four-fifths">
-          <!-- Text description area -->
-          <div class="box" style="margin: 2rem auto; background-color: #f5f5f5; max-width: 800px;">
-            <p class="has-text-centered">"A magical forest at night is filled with glowing mushrooms and a small stream running through it. A large tree with a hollow trunk forms an archway, and the sky is dark blue with a crescent moon visible. The path is covered in moss and leads through the forest, while birds chirp peacefully in the background."</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="columns is-centered">
         <div class="column">
-          <h3 class="title is-4 has-text-centered">Single Verifier (VR)</h3>
+          <h3 class="title is-4 has-text-centered">Multi-Verifier (ARW)</h3>
           <video id="video3" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_0164_single.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column">
-          <h3 class="title is-4 has-text-centered">Multi Verifiers (VR+JS)</h3>
-          <video id="video4" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/sample_0164.mp4" type="video/mp4">
+            <source src="./static/videos/sample_0218_multi.mp4" type="video/mp4">
           </video>
         </div>
       </div>
